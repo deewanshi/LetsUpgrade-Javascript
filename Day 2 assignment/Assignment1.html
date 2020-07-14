@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            This is my first assignment.
+        </title>
+    </head>
+    <body>
+        <script>
+            var today = new Date();
+            var day = today. getDay();
+            var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            document.writeln("Today is:"+daylist[day]+".");
+            var hour=today.getHours();
+              if(hour>=12)
+              {
+                  var t="PM";
+              }
+              else
+              {
+                  var t="AM";
+              }
+              hour=hour%12;
+              hour=hour?hour:12;
+              var minutes=date.getMinutes();
+              if(minutes<10)
+              {
+               minutes='0'+minutes;
+              }
+              else
+              {
+               minutes=minutes;
+              }
+              var time=hours +" "+t+" : "+minutes+" : "+date.getSeconds();
+            document.writeln("Current time is "+time);
+        </script>
+    </body>
+</html>
